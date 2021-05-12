@@ -1,0 +1,839 @@
+.heading{
+  background-color: #0f3057;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.title{
+  font-family: 'Courgette', cursive;
+  font-weight: bold;
+  font-size: 2em;
+}
+li{
+  font-weight: bold;
+}
+
+
+#description-1{
+  background-color: #000;
+  text-align: center;
+}
+.desc-img{
+  width: 100%;
+  height: 670px;
+  opacity: .5;
+}
+.carousel-control-prev-icon{
+  color: #ffffff;
+}
+#description-1 h3{
+  color: #fff;
+}
+.carousel-caption{
+  margin-bottom: 250px;
+}
+.carousel-caption h2{
+  font-size: 50px;
+  text-transform: uppercase;
+  font-family: 'Merriweather', serif;
+}
+.quote{
+  color:#000;
+}
+/* description-2------------------------------------------ */
+
+#description-2 h1{
+  text-align: center;
+  color:#16a596;
+  margin-top: 40px;
+  font-weight: 300;
+  font-family: sans-serif;
+}
+.container{
+  margin: 30px;
+}
+.row{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.image{
+  background: #50A7FF;
+  position: relative;
+  flex: 1;
+  max-width: 460px;
+  height: 300px;
+  margin: 20px;
+  overflow: hidden;
+}
+.image img{
+  opacity: 0.8;
+  position: relative;
+  vertical-align: top;
+  transition: 0.6s;
+  transition-property: opacity;
+}
+.image:hover img{
+  opacity: 1;
+}
+.image .details{
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+}
+.image .details h2{
+  text-align: center;
+  font-size: 35px;
+  text-transform: uppercase;
+  font-weight: 300;
+  margin-top: 70px;
+  transition: 0.4s;
+  transition-property: transform;
+}
+.image .details h2 span{
+  font-weight: 900;
+}
+.image:hover .details h2{
+  transform: translate(-30px);
+}
+.image .details p{
+  margin: 30px 30px 0px 30px;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  opacity: 0;
+  transition: 0.6s;
+  transition-property: opacity,transform;
+}
+.image:hover .details p{
+  opacity: 1;
+  transform: translateY(-40px);
+}
+.more{
+  position: absolute;
+  background: rgba(255, 255, 255, 0.8);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  bottom: -60px;
+  transition: 0.6s;
+  transition-property: bottom;
+}
+.image:hover .more{
+  bottom: 0;
+}
+.more .read-more{
+  color: #000;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.more .read-more span{
+  font-weight: 900;
+}
+.more .icon-links i{
+  color: #000;
+  font-size: 20px;
+}
+.more .icon-links a:not(:last-child) i{
+  margin-right: 20px;
+}
+
+/* Responsive CSS */
+
+@media (max-width: 1080px){
+    .image{
+      flex: 100%;
+      max-width: 480px;
+    }
+}
+@media (max-width: 400px){
+  .image .details p{
+    font-size: 16px;
+  }
+  .more .read-more, .more .icon-links a i{
+    font-size: 18px;
+  }
+}
+
+/* description-3-------------------------------------- */
+
+#description-3{
+  background: #03506f;
+}
+/* #description-3 img{
+  width: 500px;
+  height: 350px;
+  border-radius: 50%;
+  margin: 15px;
+  margin-right: 5px;
+} */
+
+slider{
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: #1f1f1f;
+  overflow: hidden;
+  position: absolute;
+}
+slider > * {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #1f1f1f;
+  animation: slide 12s infinite;
+  overflow: hidden;
+}
+slide:nth-child(1){
+  left: 0%;
+  animation-delay: -1s;
+  background-image: url("https://cdn.slidesharecdn.com/ss_thumbnails/calcutta-140418125519-phpapp01-thumbnail-4.jpg?cb=1398305716");
+  background-size: cover;
+  background-position: center;
+}
+slide:nth-child(2){
+  animation-delay: 2s;
+  background-image: url("https://img.traveltriangle.com/blog/wp-content/tr:w-700,h-400/uploads/2017/12/Get-Romantic-Near-The-Howrah-Bridge.jpg");
+  background-size: cover;
+  background-position: center;
+}
+slide:nth-child(3){
+  animation-delay: 5s;
+  background-image: url("https://img.etimg.com/thumb/msid-75786301,width-640,resizemode-4,imgsize-281199/thank-you-gesture.jpg");
+  background-size: cover;
+  background-position: center;
+}
+slide:nth-child(4){
+  animation-delay: 8s;
+  background-image: url("https://www.holidify.com/images/cmsuploads/compressed/Howrah_bridge_at_night_20180611190524.jpg");
+  background-size: cover;
+  background-position: center;
+}
+@keyframes slide {
+    0% { left: 100%; width: 100%;}
+    5% { left: 0%;}
+    25% { left: 0%;}
+    30% { left: -100%; width: 100%;}
+    30.0001% { left: -100%; width: 0%;}
+    100% { left: 100%; width: 0%;}
+}
+
+
+
+#description-3 h2{
+  color: #fff;
+  margin-top: 15px;
+}
+#description-3 p{
+  color: #fff;
+  font-size: 18px;
+}
+#description-3 hr{
+  border: 1px solid #ffa62b;
+}
+
+
+
+#home-contact{
+  background: url("https://i.pinimg.com/736x/55/8e/27/558e273761df6a2bd2002cd7ea8ff676.jpg");
+  width: 100%;
+  height: 50px;
+  font-size: 1.5rem;
+
+}
+#home-contact a{
+  color:#fff;
+}
+
+
+/*
+---------------------------------------------About Us---------------------------------------------------*/
+.aboutt-img{
+  width: 100%;
+  height: 670px;
+  opacity: .5;
+}
+
+table, td {
+  border: 1px solid black;
+  margin: 20px 450px 5px;
+  padding: 20px 100px 20px;
+  text-align: center;
+}
+.t{
+
+  background-color: #ded7b1;
+}
+
+#about-2 h1{
+  text-align: center;
+  color:#16a596;
+  margin-top: 40px;
+  font-weight: 300;
+  font-family: sans-serif;
+  padding-top: 20px;
+}
+
+/*
+---------------------------------------------How To-Reach ------------------------------------------------------*/
+.reach-img{
+  width: 100%;
+  height: 670px;
+  opacity: .5;
+}
+#reach-1 h2{
+  color: #16a596;
+}
+#reach-1 .container h4{
+  text-align: left;
+}
+
+
+/*
+---------------------------------------------Destination--------------------------------------------------*/
+
+/* destination-1-------------------------------------- */
+.destination-img{
+  width: 100%;
+  height: 670px;
+  opacity: .5;
+}
+#destination-1 h2{
+  text-align: center;
+  color: #16a596;
+  margin-top: 30px;
+}
+
+/* destination-2-------------------------------------- */
+#destination-2{
+  /* background: #a3d2ca; */
+  background-image: url("https://image.freepik.com/free-vector/seamless-pattern-petals-gray-background_53876-61842.jpg");
+}
+.container{
+  width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.container .box{
+  position: relative;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  margin: 40px;
+}
+.container .box .imgBx{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s ease-in-out;
+  z-index: 2;
+}
+.container .box:hover .imgBx{
+  transform: translate(-35px,-35px);
+}
+.container .box .imgBx img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.container .box .content{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #79a3b1;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 15px;
+  transition: 0.5s ease-in-out;
+}
+.container .box:hover .content{
+  transform: translate(35px,35px);
+}
+.container .box .content h2{
+  font-size: 20px;
+  color: #111;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 1px;
+  text-align: center;
+}
+.container .box .content h2 span{
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+@media (max-width: 768px) {
+  .container .box:hover .content{
+    transform: translate(35px,35px);
+  }
+  .container .box:hover .imgBx{
+    transform: translate(-35px,-35px);
+  }
+}
+#destination-2 a{
+  color: #fff;
+}
+
+/* victoria------------------------------------------------------------------- */
+#back-ground {
+  background: url("https://images.pexels.com/photos/19670/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+}
+#victoria h1{
+  text-align: center;
+  margin-top: 30px;
+  color: #16a596;
+}
+#victoria h4{
+  color: #433520;
+  font-weight: bold;
+}
+#victoria hr{
+  border: 1px solid #000;
+}
+.vic-1{
+  width: 300px;
+  height: 500px;
+  /* float: left; */
+  /* margin-left: 20px; */
+}
+.vic-2{
+  width: 300px;
+  height: 300px;
+  float: right;
+  margin-right: 20px;
+}
+.vic-contact{
+  margin-left: 30px;
+}
+
+/* Howrah----------------------------------------------------------------------------- */
+#howrah h1{
+  text-align: center;
+  margin-top: 30px;
+  color: #16a596;
+  margin-bottom: 15px;
+}
+#howrah h4{
+  color: #433520;
+  font-weight: bold;
+}
+#howrah hr{
+  border: 1px solid #000;
+}
+.how-history{
+  text-align: left;
+  margin-left: 180px;
+}
+.how-1{
+  width: 300px;
+  height: 500px;
+  /* float: left;
+  margin-left: 20px; */
+}
+.how-2{
+  width: 300px;
+  height: 300px;
+  float: right;
+  margin-right: 20px;
+}
+.how-3{
+  width: 300px;
+  height: 300px;
+  float: left;
+  margin-left: 20px;
+}
+.change{
+  margin-left: 180px;
+}
+.change h4{
+  font-weight: bold;
+}
+
+/* Park Street------------------------------------------------------------------ */
+
+#park h1{
+  text-align: center;
+  margin-top: 30px;
+  color: #16a596;
+  margin-bottom: 15px;
+}
+#park h4{
+  color: #433520;
+  font-weight: bold;
+}
+#park hr{
+  border: 1px solid #000;
+}
+.park-1{
+  width: 300px;
+  height: 500px;
+  /* float: left;
+  margin-left: 20px; */
+}
+.park-2{
+  width: 300px;
+  height: 300px;
+  float: right;
+  margin-right: 20px;
+}
+.park-3{
+  width: 300px;
+  height: 300px;
+  float: left;
+  margin-left: 20px;
+}
+
+
+/* New Market---------------------------------------------------------------- */
+
+#new  h1{
+  text-align: center;
+  margin-top: 30px;
+  color: #16a596;
+  margin-bottom: 15px;
+}
+#new h4{
+  color: #433520;
+  font-weight: bold;
+}
+#new hr{
+  border: 1px solid #000;
+}
+.new-1{
+  width: 300px;
+  height: 500px;
+  /* float: left;
+  margin-left: 20px; */
+}
+.new-2{
+  width: 300px;
+  height: 300px;
+  float: right;
+  margin-right: 20px;
+}
+.new-3{
+  width: 300px;
+  height: 300px;
+  float: left;
+  margin-left: 20px;
+}
+.new-4{
+  width: 300px;
+  height: 300px;
+  margin-left: 180px;
+  padding-right: 30px;
+}
+.new-5{
+  width: 300px;
+  height: 300px;
+  margin-left: 20px;
+  padding-right: 30px;
+}
+.new-6{
+  width: 300px;
+  height: 300px;
+  margin-left: 20px;
+}
+
+/* Dakshineswar Kali Temple--------------------------------------------------------------- */
+
+#dakshi  h1{
+  text-align: center;
+  margin-top: 30px;
+  color: #16a596;
+  margin-bottom: 15px;
+}
+#dakshi h4{
+  color: #433520;
+  font-weight: bold;
+}
+#dakshi hr{
+  border: 1px solid #000;
+}
+.dakshi-1{
+  width: 300px;
+  height: 500px;
+  /* float: left;
+  margin-left: 20px; */
+}
+.dakshi-2{
+  width: 300px;
+  height: 300px;
+  float: right;
+  margin-right: 20px;
+}
+
+/* kumrotuli-------------------------------------------------------- */
+#kumrotuli  h1{
+  text-align: center;
+  margin-top: 30px;
+  color: #16a596;
+  margin-bottom: 15px;
+}
+#kumrotuli h4{
+  color: #433520;
+  font-weight: bold;
+}
+#kumrotuli hr{
+  border: 1px solid #000;
+}
+.kumro-1{
+  width: 300px;
+  height: 500px;
+  /* float: left;
+  margin-left: 20px; */
+}
+.kumro-2{
+  width: 300px;
+  height: 300px;
+  float: right;
+  margin-right: 20px;
+}
+.kumro-3{
+  width: 300px;
+  height: 300px;
+  float: left;
+  margin-left: 20px;
+}
+/* Eco park--------------------------------------------------------------------- */
+#eco  h1{
+  text-align: center;
+  margin-top: 30px;
+  color: #16a596;
+  margin-bottom: 15px;
+}
+#eco h4{
+  color: #433520;
+  font-weight: bold;
+}
+#eco hr{
+  border: 1px solid #000;
+}
+.eco-1{
+  width: 300px;
+  height: 500px;
+  /* float: left;
+  margin-left: 20px; */
+}
+.eco-2{
+  width: 300px;
+  height: 300px;
+  float: right;
+  margin-right: 20px;
+}
+.eco-3{
+  width: 300px;
+  height: 300px;
+  float: right;
+  margin-right: 20px;
+}
+.eco-4{
+  width: 300px;
+  height: 300px;
+  float: right;
+  margin-right: 20px;
+}
+.eco-5{
+  width: 600px;
+  height: 350px;
+  margin-left: 180px;
+}
+
+/* College Street---------------------------------------------------------------------- */
+#college  h1{
+  text-align: center;
+  margin-top: 30px;
+  color: #16a596;
+  margin-bottom: 15px;
+}
+#college h4{
+  color: #433520;
+  font-weight: bold;
+}
+#college hr{
+  border: 1px solid #000;
+}
+.coll-1{
+  width: 300px;
+  height: 500px;
+  /* float: left;
+  margin-left: 20px; */
+}
+.coll-2{
+  width: 300px;
+  height: 300px;
+  float: right;
+  margin-right: 20px;
+}
+
+
+/* South Park Cemetery------------------------------------------------------------------ */
+#cem  h1{
+  text-align: center;
+  margin-top: 30px;
+  color: #16a596;
+  margin-bottom: 15px;
+}
+#cem h4{
+  color: #433520;
+  font-weight: bold;
+}
+#cem hr{
+  border: 1px solid #000;
+}
+.cem-1{
+  width: 300px;
+  height: 500px;
+  /* float: left;
+  margin-left: 20px; */
+}
+.cem-2{
+  width: 300px;
+  height: 300px;
+  float: right;
+  margin-right: 20px;
+}
+/* Old Chinatown------------------------------------------------------------------------------ */
+#china  h1{
+  text-align: center;
+  margin-top: 30px;
+  color: #16a596;
+  margin-bottom: 15px;
+}
+#china h4{
+  color: #433520;
+  font-weight: bold;
+}
+#china hr{
+  border: 1px solid #000;
+}
+.china-1{
+  width: 300px;
+  height: 500px;
+  /* float: left;
+  margin-left: 20px; */
+}
+.china-2{
+  width: 300px;
+  height: 300px;
+  float: right;
+  margin-right: 20px;
+}
+.china-3{
+  width: 300px;
+  height: 300px;
+  float: left;
+  margin-left: 20px;
+}
+.china-4{
+  width: 300px;
+  height: 300px;
+  float: right;
+  margin-right: 20px;
+}
+.china-5{
+  width: 300px;
+  height: 300px;
+  float: left;
+  margin-left: 20px;
+}
+
+/*
+---------------------------------------------Accomodation--------------------------------------------------*/
+.accomodation-img{
+  width: 100%;
+  height: 670px;
+  opacity: .5;
+}
+#accomodation-1 h2{
+  color: #16a596;
+}
+
+#accomodation-2 a{
+  color: #db6400;
+}
+#accomodation-2{
+  background-image: url("https://image.freepik.com/free-vector/seamless-pattern-petals-gray-background_53876-61842.jpg");
+}
+
+.about-img{
+  border-radius: 100%;
+  height: 400px;
+  width: 70%;
+}
+.box{
+  width: 250px;
+  margin: 0 auto;
+  position: relative;
+  perspective: 1000px;
+}
+.box .box-img{
+  transform: rotateY(0);
+  transition: all 0.5s ease-in-out 0s;
+}
+.box:hover .box-img{
+  transform: rotateY(-90deg);
+}
+.box .box-img img{
+  width: 100%;
+  height: auto;
+}
+.box .box-content{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 80px 20px;
+  border:3px solid #12cad6;
+  text-align: center;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.7);
+  transform: rotateY(90deg);
+  transition: all 0.5s ease-in-out 0s;
+}
+.box:hover .box-content{
+  transform: rotateY(0);
+}
+
+
+/*
+---------------------------------------------Contact Us--------------------------------------------------*/
+.contact-img{
+  width: 100%;
+  height: 550px;
+}
+#contact-1 .con{
+  margin: 30px 80px;
+}
+#contact-1 i{
+  font-size: 40px;
+  color: #16a596;
+}
+#contact-1 span{
+  margin: 0 10px;
+}
+#contact-1 h3{
+  color: #16a596;
+}
